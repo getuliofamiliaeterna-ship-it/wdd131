@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça um lugar, sua paisagem, seus dados e suas condições climáticas.">
+    <meta name="author" content="Getulio da Silva Carvalho Junior">
+    <title>Página do País | WDD131</title>
+
+<link rel="icon" type="image/svg+xml" href="imagens/clima.svg">
+
+
+<link rel="stylesheet" href="estilos/local.css">
+
+<script src="scripts/local.js" defer></script>
+
+
+</head>
+<body>
+
+<header>
+    <h1>Brasil</h1>
+</header>
+
+<main>
+
+<picture>
+    <img
+        src="imagens/ponte-jk-1000.webp"
+        srcset="
+            imagens/ponte-jk-500.webp 500w,
+            imagens/ponte-jk-1000.webp 1000w,
+            imagens/ponte-jk-1500.webp 1500w"
+        sizes="(max-width: 600px) 100vw, (max-width: 1024px) 90vw, 1200px"
+        alt="Ponte Juscelino Kubitschek em Brasília ao pôr do sol"
+        width="1500"
+        height="844">
+</picture>
+
+<section class="dados" aria-labelledby="titulo-dados">
+    <h2 id="titulo-dados">Dados</h2>
+    <dl>
+        <dt>Capital</dt>
+        <dd>Brasília</dd>
+
+        <dt>Idioma oficial</dt>
+        <dd>Português</dd>
+
+        <dt>Moeda</dt>
+        <dd>Real (BRL)</dd>
+
+        <dt>Continente</dt>
+        <dd>América do Sul</dd>
+    </dl>
+</section>
+
+<section class="clima" aria-labelledby="titulo-clima">
+    <h2 id="titulo-clima">Clima</h2>
+
+<img
+    class="icone-clima"
+    src="imagens/clima.svg"
+    alt="Ícone de sol parcialmente encoberto por nuvens"
+    width="64"
+    height="64">
+
+    <dl>
+        <dt>Temperatura</dt>
+        <dd>25 °C</dd>
+
+        <dt>Condições</dt>
+        <dd>Parcialmente nublado</dd>
+
+        <dt>Vento</dt>
+        <dd>12 km/h</dd>
+
+        <dt>Sensação térmica</dt>
+        <dd><span id="sensacao-termica">N/A</span></dd>
+    </dl>
+</section>
+
+</main>
+
+<footer>
+    <p>© <span id="ano-atual"></span> Getulio da Silva Carvalho Junior | Brasil</p>
+    <p>Última modificação: <span id="ultima-modificacao"></span></p>
+</footer>
+
+
+</body>
+</html>

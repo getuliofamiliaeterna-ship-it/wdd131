@@ -1,0 +1,21 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <title>Parcialmente nublado</title>
+
+    <circle cx="24" cy="23" r="11" fill="#FBBF24"/>
+
+    <g stroke="#D97706"
+       stroke-width="3"
+       stroke-linecap="round">
+        <path d="M24 5v6 M7 23h6 M35 23h6 M12 11l4 4"/>
+    </g>
+
+    <path
+        d="M19 51h29a9 9 0 0 0 0-18
+           14 14 0 0 0-26 3
+           8 8 0 0 0-3 15Z"
+        fill="#E0F2FE"
+        stroke="#0369A1"
+        stroke-width="3"
+        stroke-linejoin="round"/>
+</svg>

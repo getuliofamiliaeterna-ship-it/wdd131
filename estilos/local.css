@@ -1,0 +1,122 @@
+
+:root {
+    --verde-brasil: #14532d;
+    --branco: #ffffff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+header {
+    background-color: var(--verde-brasil);
+    color: var(--branco);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+.dados,
+.clima {
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    border: 1px solid #d1d5db;
+}
+
+.dados h2,
+.clima h2 {
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+.dados dl,
+.clima dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.dados dt,
+.clima dt {
+    font-weight: bold;
+    text-align: right;
+}
+
+.dados dd,
+.clima dd {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    .dados,
+    .clima {
+        position: absolute;
+        width: 300px;
+        max-width: calc(50% - 1.5rem);
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .dados {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .clima {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+.icone-clima {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+}
+
+@media (min-width: 768px) {
+    .icone-clima {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .clima h2::after {
+        content: "⛅";
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+footer {
+    background-color: var(--verde-brasil);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
